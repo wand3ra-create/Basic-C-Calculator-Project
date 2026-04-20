@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+char user_oper;
+int num_a,num_b;
+
+int add(int a, int b){
+	int result = a+b ;
+	printf("Result : %d\n", result);
+	return 0;
+}
+
+int substract(int a,int b){
+	int result = a-b;
+	printf("Result: %d\n", result );
+	return 0;
+}
+
+int main(void){
+	printf("Input Two Numbers : \n");
+	scanf (" %d %d", &num_a, &num_b);
+	printf( "Your Operation ( + - * /) :");
+	scanf (" %c", &user_oper);
+	
+if (user_oper == '+'){
+	add(num_a,num_b);
+	
+	return 0;
+}
+
+if (user_oper == '-'){
+	substract(num_a,num_b);
+	
+	return 0;
+}
+
+return 0;
+}
+	
+
+
+
