@@ -15,6 +15,18 @@ int substract(int a,int b){
 	return 0;
 }
 
+int multiply(int a, int b){
+    int result = a*b;
+    printf("Result: %d\n");
+    rturn 0;
+}
+
+int div(int a,int b){
+    int result= a/b;
+    printf ("Result: %d\n");
+    return 0;
+}
+
 int main(void){
 	printf("Input Two Numbers : \n");
 	scanf (" %d %d", &num_a, &num_b);
