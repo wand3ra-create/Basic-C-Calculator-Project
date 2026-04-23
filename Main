@@ -15,17 +15,18 @@ int substract(int a,int b){
 	return 0;
 }
 
-int multiply(int a, int b){
-    int result = a*b;
-    printf("Result: %d\n");
-    rturn 0;
+int multiply( int a, int b){
+	int result = a*b;
+	printf ("Result: %d\n", result);
+	return 0;
 }
 
-int div(int a,int b){
-    int result= a/b;
-    printf ("Result: %d\n");
-    return 0;
+int div(int a, int b){
+	int result = a/b;
+	printf ("Result: \d\n", result );
+	return 0;
 }
+
 
 int main(void){
 	printf("Input Two Numbers : \n");
@@ -45,9 +46,16 @@ if (user_oper == '-'){
 	return 0;
 }
 
+if (user_oper == '*'){
+	multiply(num_a,num_b);
+	return 0;
+}
+
+if (user_oper=='/'){
+	div(num_a,num_b);
+	return 0;
+}
+
+
 return 0;
 }
-	
-
-
-
